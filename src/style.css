@@ -1,0 +1,20 @@
+
+.box{
+    position: absolute;
+    width: 570px;
+    height: 621px;
+    left: 829px;
+    top: 348px;
+    background: #B82C2C;
+}
+
+box ~h1{
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
