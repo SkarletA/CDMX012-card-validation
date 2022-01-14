@@ -9,8 +9,15 @@ console.log(validator);
     
     const boton = document.getElementById("boton");
     const guardar = function() {
-        alert(typeof(guardarNumero.value));
         
+        let numero = guardarNumero.value;
+        let longitud = numero.length;
+        let array = [];
+        
+        for (let i = 0; i <= longitud-1; i++) {
+            array.push(parseInt(numero[i]));
+        };
+        alert(array)
     };
 
     boton.addEventListener("click", guardar);
