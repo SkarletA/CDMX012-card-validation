@@ -16,16 +16,37 @@
         <!--Menu-->
         <nav>
           <ul id="menu">
-            <li><a href="">Menu</a></li>
-            <li><a href="">Quienes somos</a></li>
-            <li><a href="">Producto</a></li>
-            <li><a href="#contenido" class="sistema_de_pago">Sistema de Pago</a></li> 
+            <li><a href="">Menu</a>
+              <ul>
+                <li><a href="#historia" class="historia">Historia</a></li>
+                <li><a href="#producto" class="producto">Producto</a></li>
+                <li><a href="#contenido" class="sistema_de_pago">Sistema de Pago</a></li>
+              </ul> 
+            </li>
           </ul>
         </nav>
-
+        <br>
+        <!--Resena Historica-->
+        <div id="historia" class="historia">
+          <p><h2>Reseña Historica</h2></p>
+          <p>La palabra proviene posiblemente del cumanagoto. Algunos estudiosos del idioma indican que la palabra arepa proviene del vocablo indígena “erepa”, 
+            que los Cumanagotos tribu de los Caribes que habitaba la región noreste de Venezuela utilizaron para nombrar el maíz, ingrediente básico en la preparación 
+            de este alimento. De acuerdo a otra versión, el vocablo arepa pudiera provenir de “aripo”, especie de plancha levemente curva, fabricada en barro,
+            que utilizaban los indígenas para la cocción de la masa de harina de maíz. <br></p>
+           <p>La arepa es una torta de masa o harina de maíz de forma circular y semi-aplanada que generalmente se cocina asada o frita. Es un alimento que sirve para comerse 
+            como plato principal o como acompañante, sola o rellena, comúnmente como parte del desayuno, del almuerzo o la cena. Es un plato tradicional de la gastronomía venezolana.</p><br>
+        </div>
+        <br>
       </header>
 
       <main>
+        <br>
+        <!--Producto-->
+        <div class="producto" id="producto">
+          <img src="/Logos/arepa_carnes.PNG" alt="" ALIGN="center"  BORDER="3">
+          <img src="/Logos/arepa_pabellon.PNG" alt="" ALIGN="center" BORDER="3">
+          <img src="/Logos/arepa_reina_pepiada.PNG" alt="" ALIGN="center" BORDER="3">
+        </div>
         <!--Sistema de Pago-->
         <form action="" class="form" id="formulario" method="post" >
           <div class="box">
@@ -43,7 +64,7 @@
                 </div>
               </section>
               
-              <section>
+              <section class="funcionalidad_tarjeta">
                 <h2>Tarjeta de Credito/Debito</h2>
                 <div class="numero_tarjeta">
                   <input type="text" id="numero_tarjeta" onkeypress="return event.charCode>=48&&event.charCode<=57" required
@@ -54,8 +75,7 @@
                   <button type="button" class="validacion" id="boton" >Validar</button>
                   <button type="button" class="validacion1" id="volver_a_validar" >Volver a Validar</button>
                 </div><br>
-                <div id="mensaje" class="mensaje">
-                  
+                <div id="mensaje" class="mensaje"> 
                 </div>
               </section>
             </div>
