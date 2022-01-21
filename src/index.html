@@ -6,43 +6,64 @@
     <link rel="stylesheet"  href="style.css" />
   </head>
   <body>
-    <header>
-      <!--Encabezado, logo y titulo Principal-->
-      <div class="inicio">
-        <img src="/Logos/logo_arepas2.JPG" alt="">
-        <h1>Las Mejores que podras encontrar</h1>
-      </div>
-      <!--Menu-->
-      <nav>
-        <ul id="menu">
-          <li><a href="">Menu</a></li>
-          <li><a href="">Quienes somos</a></li>
-          <li><a href="">Producto</a></li>
-          <li><a href="">Sistema de Pago</a></li> 
-        </ul>
-      </nav>
-
-    </header>
-
-    <main>
-      <form action="" class="form" id="formulario" method="post" >
-        <div class="box">
-          <div class="sistema_de_pago">
-            <h1>Sistema de pago</h1>
-            <p>Tarjeta de Credito/Debito</p>
-          </div>
-
-          <div class="numero_tarjeta">
-            <input type="number" id="numero_tarjeta" placeholder=" numero de tarjeta" >
-          </div>
-          <br>
-          <div class="boton">
-            <button type="button" class="validacion" id="boton" >Validar</button>
-          </div>
+    <div class="contenedor">
+      <header>
+        <!--Encabezado, logo y titulo Principal-->
+        <div class="inicio">
+          <img src="/Logos/logo_arepas2.JPG" alt="">
+          <h1>Las Mejores que podras encontrar</h1>
         </div>
-      </form>
-    </main>
-    <footer></footer>
+        <!--Menu-->
+        <nav>
+          <ul id="menu">
+            <li><a href="">Menu</a></li>
+            <li><a href="">Quienes somos</a></li>
+            <li><a href="">Producto</a></li>
+            <li><a href="#contenido" class="sistema_de_pago">Sistema de Pago</a></li> 
+          </ul>
+        </nav>
+
+      </header>
+
+      <main>
+        <!--Sistema de Pago-->
+        <form action="" class="form" id="formulario" method="post" >
+          <div class="box">
+            <div id="contenido" class="sistema_de_pago">
+              <h2>Sistema de pago</h2>
+              <section class="tarjeta" id="tarjeta">
+                <div class="delantera">
+                  <div class="chip">
+                    <img src="/Logos/chip-tarjeta.png" alt="">
+                  </div>
+                  <div class="datos">
+                     <p class="label">Numero tarjeta</p>
+                     <p class="numero" id="numero_final">#### #### #### 1234</p>
+                 </div> 
+                </div>
+              </section>
+              
+              <section>
+                <h2>Tarjeta de Credito/Debito</h2>
+                <div class="numero_tarjeta">
+                  <input type="text" id="numero_tarjeta" onkeypress="return event.charCode>=48&&event.charCode<=57" required
+                  maxlength="16" minlength="10" placeholder="numero de tarjeta" >
+                </div>
+                <br>
+                <div class="boton">
+                  <button type="button" class="validacion" id="boton" >Validar</button>
+                  <button type="button" class="validacion1" id="volver_a_validar" >Volver a Validar</button>
+                </div><br>
+                <div id="mensaje" class="mensaje">
+                  
+                </div>
+              </section>
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer></footer>
+    </div> 
     <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -1,43 +1,117 @@
+.contenedor{
+  width: 90%;
+  max-width: 1040px;
+  
+}
+.tarjeta{
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 20 px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta > div{
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px 0 black;
+}
+.tarjeta .delantera{
+  width: 100%;
+  background: url(../Logos/fondo.jpg);
+  background-size: cover;
+  
+}
+.delantera .chip img{
+  width: 40px;
+  height: 40px;
+  
+}
+.tarjeta .delantera .label {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.tarjeta .delantera .numero {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+
 .box{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 550px;
-    top: 500px;
+    position: relative;
     background: #B82C2C;
+    max-width: 450px;
+    padding: 150px 30px 30px 30px;
+    border-radius: 10px;
+    margin-left: 650px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.inicio{
+  background:#B82C2C;; 
+  font-weight:"bold"
+}
 
 h1{
+  position: absolute;
+  width: 425px;
+  height: 62px;
+  left: 527px;
+  top: 42px;
+
+  font-family: Romanesco;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 63px;
+  text-align: center;
+
+  color: honeydew;
+
+}
+
+h2{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
+    color: honeydew;
 }
 ul{
     list-style: none;
   }
-  #menu li>a{
-    background-color: grey;
-    color: white;
-    padding: 1px;
-    display: block;
-    text-decoration: none;
-    min-width: 10px;
-    width: 150px;
-    height: 50px;
-    left: 10px;
-    top: 50px;
-    text-align: center;
+#menu li>a{
+  background-color: gray;
+  color: white;
+  padding: 1px;
+  display: block;
+  text-decoration: none;
+  min-width: 10px;
+  width: 150px;
+  height: 50px;
+  left: 10px;
+  top: 50px;
+  text-align: center;
 
-  }
-  #menu li>a:hover{
-    color: black;
-    background-color: #eaeaea;
-  }
-  
+}
+#menu li>a:hover{
+  color: black;
+  background-color: #eaeaea;
+}
+.mensaje{
+  text-decoration-color: white;
+  font-size: large;
+  border: 10px solid blue;
+}
