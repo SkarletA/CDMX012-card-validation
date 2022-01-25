@@ -13,29 +13,45 @@ main{
 }
 .inicio{
   background:#B82C2C;; 
-  font-weight:"bold"
 }
+.inicio img{
+  height: 180px;
+  width: 350px;
+  border-radius: 45%;
+  
+}
+/*Estilos a la historia*/
 .historia{
   background:#B82C2C;
   text-align: justify;
   padding: 20px 30px 20px 30px;
-}
+  border-radius: 10px;
 
+}
+/*Estilo a los parrafos*/
 p{
-  color:burlywood;
+  color:azure;
   margin-bottom: 0 
 }
 p + p {
   text-indent: 1.5em;
   margin-top: 0 
 }
-img{
-  height: 200px;
-  width: 350px;
-  padding: 20px 20px 20px 20px;
+
+/*Estilo a las imagenes del producto*/
+.producto img{
+  padding: 10px 10px 10px 10px;
   max-width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border:solid 3px;
   
 }
+
+/*Estilos a la tarjeta */
 .tarjeta{
   width: 100%;
   max-width: 700px;
@@ -76,7 +92,7 @@ img{
   margin-bottom: 5px;
 }
 
-
+/*Contenedor de el area de sistema de pago*/
 .box{
     position: relative;
     background: #B82C2C;
@@ -91,7 +107,7 @@ img{
     height: 500px;
 }
 
-
+/*Estilo a los titulos*/
 h1{
   position: absolute;
   width: 425px;
@@ -101,10 +117,10 @@ h1{
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 26px;
   line-height: 63px;
   text-align: center;
-  color: honeydew;
+  color: azure;
 }
 
 h2{
@@ -116,6 +132,34 @@ h2{
     text-align: center;
     color: honeydew;
 }
+/*Estilos a los botones*/
+.numero_tarjeta{
+  text-align: center;
+}
+#numero_tarjeta{
+  text-align: center;
+  width: 185px;
+  height: 30px;
+  
+}
+.boton{
+  text-align: center;
+}
+.validacion{
+  border:solid cornflowerblue;
+  background: blue;
+  width: 85px;
+  height: 30px;
+  color: azure;
+}
+.validacion1{
+  border:solid cornflowerblue;
+  background-color: blue;
+  width: 125px;
+  height: 30px;
+  color: azure;
+}
+/*Estilo a el menu*/
 ul{
     list-style: none;
   }
@@ -148,9 +192,41 @@ ul{
 #menu>li:hover>ul {
   display:block;
 }
+/*Estilos al mensaje de validacion*/
 .mensaje{
   text-decoration-color: white;
   font-size: large;
-  border: 10px solid green;
+  border: black;
+  display: none;
+  text-align: center;
+}
 
+.hide{
+display: block;
+
+}
+#valido{
+  background: green;
+  color: azure;
+  border: solid gold;
+}
+
+/*Estilos del Pie de pagina*/
+.pie_de_pagina{
+  color:gray;
+  border-right: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	padding: 5px 5px 5px 5px;
+	margin: 100px ;
+	height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.pie_de_pagina img{
+  height: 20px;
+  width: 30px;
+}
+#pie_de_pagina{
+  color:gray;
 }
