@@ -1,5 +1,5 @@
 const validator = {
-   isValid(numero){
+  isValid(numero){
     let longitud = numero.length;
     let array = [];
     

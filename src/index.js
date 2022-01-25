@@ -4,25 +4,27 @@ import validator from './validator.js';
 
 //Guardar el numero ingresado en una constante  
 const guardarNumero = document.getElementById('numero_tarjeta');
+const validar=document.getElementById("volver_a_validar");
 const boton = document.getElementById("boton");
-const parrafo =document.createElement("p");
-const mensaje= document.getElementById("mensaje");
+const mensaje=document.getElementById("mensaje");
 
-const numero_final = document.getElementById("numero_final");
 const nuevaTarjeta= document.createElement("p");
+const numero_final = document.getElementById("numero_final");
+
 
 
 function guardar() {
+
     if (validator.isValid(guardarNumero.value) == true){
-        let mensajeValido= document.createTextNode("Tarjeta Valida");
-        parrafo.appendChild(mensajeValido);
-        mensaje.appendChild(parrafo);
+        document.getElementById("valido").innerHTML="Tarjeta Valida";
     }
     else {
-        let mensajeValido= document.createTextNode("Tarjeta Invalida");
-        parrafo.appendChild(mensajeValido);
-        mensaje.appendChild(parrafo);
+        document.getElementById("valido").innerHTML="Tarjeta Invalida";
+
     }
+    mensaje.classList.add("hide");
+    boton.disabled=true;
+
     const oculto= validator.maskify(guardarNumero.value);
     nuevaTarjeta.innerHTML=`<p class="numero" id="numero_final">${oculto}</p>`;
     numero_final.parentNode.replaceChild(nuevaTarjeta, numero_final);
@@ -31,6 +33,8 @@ function guardar() {
 
 
 boton.addEventListener("click", guardar);
+
+validar.addEventListener("click", guardar);
 
 
 
