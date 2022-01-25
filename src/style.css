@@ -8,7 +8,7 @@ main{
 }
 .contenedor{
   width: 90%;
-  max-width: 1040px;
+  max-width: 1200px;
   
 }
 .inicio{
@@ -151,6 +151,12 @@ h2{
   width: 85px;
   height: 30px;
   color: azure;
+}
+.validacion:disabled,
+.validacion[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 .validacion1{
   border:solid cornflowerblue;
