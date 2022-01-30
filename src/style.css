@@ -230,9 +230,13 @@ display: block;
   align-content: center;
 }
 .pie_de_pagina img{
-  height: 35px;
-  width: 50px;
+  height: 15px;
+  width: 35px;
 }
 #pie_de_pagina{
   color:gray;
+}
+#github img{
+  height: 35px;
+  width: 55px;
 }
