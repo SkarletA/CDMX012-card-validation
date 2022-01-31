@@ -22,5 +22,5 @@ En este prototipo se representa en papel, con la idea de tener una pagina que of
 
 ### Prototipo Final
 
-![prototipo Final](/src/logos/Prototipo_final.PNG)
+![prototipo Final](/src/logos/Prototipo_final1.PNG)
 
