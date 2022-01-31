@@ -22,7 +22,7 @@ function guardar() {
         document.getElementById("valido").innerHTML="Tarjeta Invalida";
 
     }
-    mensaje.classList.add("hide");
+    mensaje.classList.add("show");
     boton.disabled=true;
 
     const oculto= validator.maskify(guardarNumero.value);
