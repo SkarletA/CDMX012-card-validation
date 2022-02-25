@@ -19,6 +19,7 @@ Este proyecto trata de como se valida una tarjeta de debito o credito a traves d
 ### Imagen final del Proyecto
 
 ![Imagen final del proyecto](/src/logos/Imagen_final_proyecto.PNG)
+![Imagen final del proyecto con mejoras](/src/logos/mejoras_al_prototipo_final.PNG)
 
 ## 2. Investigación UX
 

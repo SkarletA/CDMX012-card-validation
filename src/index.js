@@ -10,6 +10,10 @@ const mensaje=document.getElementById("mensaje");
 
 const nuevaTarjeta= document.createElement("p");
 const numero_final = document.getElementById("numero_final");
+const btnHistoria= document.querySelector(".btn-historia");
+const historia= document.querySelector(".resena-historica");
+
+
 
 
 
@@ -35,6 +39,13 @@ function guardar() {
 boton.addEventListener("click", guardar);
 
 validar.addEventListener("click", guardar);
+
+btnHistoria.addEventListener("click", ()=>{
+    historia.classList.add("mostrar");
+
+})
+
+
 
 
 
