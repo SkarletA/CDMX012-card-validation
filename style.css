@@ -5,28 +5,36 @@ body{
 
 main{
   display: flex;
+  overflow-y: scroll;
+  height: 35em;
+}
+header{
+  height: 160px;
 }
 .contenedor{
-  width: 90%;
-  max-width: 1200px;
-  
+  width: 100%;
+  max-width: 1700px;
 }
 .inicio{
-  background:#B82C2C;; 
+  background:#B82C2C; 
+  height: 150px;
 }
 .inicio img{
-  height: 180px;
-  width: 350px;
+  height: 145px;
+  width: 300px;
   border-radius: 45%;
   
 }
 /*Estilos a la historia*/
-.historia{
+.resena-historica{
   background:#B82C2C;
   text-align: justify;
   padding: 20px 30px 20px 30px;
   border-radius: 10px;
-
+  display: none;
+  height: 510px;
+  width: 500px;
+  margin-left: 20px;
 }
 /*Estilo a los parrafos*/
 p{
@@ -48,6 +56,8 @@ p + p {
   margin-right: auto;
   width: 50%;
   border:solid 3px;
+  margin-bottom: 20px;
+  margin-top: 40px;
   
 }
 
@@ -71,7 +81,7 @@ p + p {
 }
 .tarjeta .delantera{
   width: 100%;
-  background: url(../Logos/fondo.jpg);
+  background: url(../logos/fondo.jpg);
   background-size: cover;
   
 }
@@ -104,7 +114,9 @@ p + p {
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 500px;
+    height: 430px;
+    right: 0;
+    
 }
 
 /*Estilo a los titulos*/
@@ -240,3 +252,35 @@ display: block;
   height: 35px;
   width: 55px;
 }
+.mostrar{
+  display: block;
+}
+.btn-historia{
+  background-color: gray;
+  color: white;
+  display: flex;
+  min-width: 10px;
+  width: 150px;
+  height: 51px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: arial;
+  border: 0;
+  
+}
+
+.btn-historia:hover{
+  color: black;
+  background-color: #eaeaea;
+  border: 0;
+}
+.ocultar{
+  display: none;
+}
+footer{
+  margin-top: -50px;
+}
+
