@@ -81,7 +81,7 @@ p + p {
 }
 .tarjeta .delantera{
   width: 100%;
-  background: url(../logos/fondo.jpg);
+  background: url(logos/fondo.jpg);
   background-size: cover;
   
 }
